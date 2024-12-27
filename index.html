@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div><span>Solar</span>Lite</div>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">A propos</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section>
+        <div class="entete">
+            <div><span>Solar</span>Lite</div>
+            <nav id="lien">
+                <a href="#">Accueil</a>
+                <a href="#">A propos</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
         <section id="hero">
-            <img src="image/81LcazKBBeL.jpg" alt="">
-            <div>
+            <div id="lampe">
                 <h1>La lampe solaire qu'il vous faut !</h1>
-                <button>En savoir plus</button>
+                <a id="lien1" href="#solart">En savoir plus</a>
             </div>
-        </section>
-        <section id="fonctionalite">
-            <h1>Pourquoi choisir SolarLite ?</h1>
-            <p>
-                SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans
-                électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de
-                l’environnement.</p>
-            <div id="pointCle">
-                <div>
-                    <h1>Rechargeable grace au soleil</h1>
-                    <img src="image/1000042513.jpg" alt="">
-                </div>
-                <div>
-                    <h1>Compacte et facile a transporter</h1>
-                    <img src="image/support et panneau.jpg" alt="">
-                </div>
-                <div>
-                    <h1>Durée de vie prolongée avec une batterie integrée</h1>
-                    <img src="image/unnamed.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="Contact">
-            <h1>Restez  informé</h1>
-            <form action="">
-                <label for="">Nom</label>
-                <input type="text">
-                <label for="">E-mail</label>
-                <input type="text">
-                <button>Soumettre</button>
-            </form>
-
-        </section>
-
+        <img class="image1" src="image/lampe.png" alt="">
     </section>
-    <footer>
+    </header>
+    
 
+            <div id="solart">
+                <h1>Pourquoi choisir SolarLite ?</h1>
+                <p>
+                    SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans
+                    électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de
+                    l’environnement.</p>
+            </div>
+                <section id="cord">
+                   
+                        <div class="pointCle">
+                            <h1>Rechargeable grace au soleil</h1>
+                            <img src="image/unnamed.jpg" alt="">
+                            
+                            <p>
+                                utilise la lumière du soleil pour se recharger, offrant une solution
+                                d'éclairage éco-responsable et sans consommation d'énergie.
+                                Recharge solaire : Alimentée par la lumière naturelle du soleil.
+                                Économie d'énergie : Pas besoin de piles ni d'électricité.
+                                Autonomie prolongée : S'éclaire toute la nuit après une journée de charge complète.
+                                
+                            </p>
+                        </div>
+                        <div class="pointCle">
+                            <h1>Compacte et facile a transporter</h1>
+                            <img src="image/unnamed.jpg" alt="">
+                            <p>
+                                idéale pour vos aventures en extérieur.
+                                Parfaite pour le camping, les randonnées ou les soirées en plein air, 
+                                cette lampe vous garantit une lumière fiable sans tracas.
+                                Son design léger et pratique vous permet de l'emporter partout où vous allez.
+                                Design moderne : Convient à tous les types de décor extérieur.
+                            </p>
+                        </div>
+                        <div class="pointCle">
+                            <h1 id="title">Durée de vie prolongée avec une batterie integrée</h1>
+                            <img src="image/unnamed.jpg" alt="">
+                            <p>
+                                Cette lampe solaire rechargeable est équipée d'une batterie intégrée de haute qualité,
+                                offrant une durée de vie prolongée et une recharge rapide grâce à l'énergie solaire
+                                La batterie rechargeable garantit une performance durable, vous permettant de profiter
+                                d'une lumière fiable pendant toute la nuit après une charge complète.
+                            </p>
+                        </div>
+                   
+                </section>
+        <section id="Contact">
+            <div class="form-container">
+                <h2>Contactez-nous</h2>
+                <form action="#Contact" method="POST" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label>Email :</label>
+                        <input type="email" id="email" name="email">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Message :</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+
+        </section>
+    <footer>
+        <div id="copy">
+            Copyright ©2024 Tous droits réservés | Ce modèle est conçu avec ❤️ 
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
