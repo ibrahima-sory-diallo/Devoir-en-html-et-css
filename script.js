@@ -45,5 +45,5 @@ function validateForm(){
         textError.style.display = textMessage.value === '' ? 'block' : 'none';
     });
     
-    return false 
+    return false
 }  
